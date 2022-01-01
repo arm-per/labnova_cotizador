@@ -1,0 +1,16 @@
+.layouttop{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 2rem;
+}
+
+.studioslayout{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.layoutcardcontainer{
+    max-width: 1200px;
+
+}

@@ -1,0 +1,150 @@
+.maincard{
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.cardtitle{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+    margin-block: 0;
+    max-width: 100%;
+}
+
+.titlearea{
+    background-color: #3382BD;
+    padding: 1rem;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.prices{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: #7E7E7E;
+}
+
+.indicaciones p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+.indicaciones{
+    position: absolute;
+    padding: 1rem;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #0063ADcc;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: all .3s ease-in;
+    backdrop-filter: blur(5px);
+}
+
+.show{
+    transition: all .3s ease-in;
+    top: 0;
+}
+
+.indicacionesButton{
+    color: white;
+    background: #06375C55;
+    border: none;
+    position: absolute;
+    border-radius: 0 0 20px 20px;
+    top: 0;
+    width: 50%;
+    height: 40px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.indicacionesButton:hover{
+    background: #06375Cff;
+}
+
+.prices span{
+    font-size: 20px;
+    display: block;
+    font-weight: 400;
+
+}
+
+.buttonarea{
+    display: flex;
+    padding: 1rem;
+}
+
+.rules{
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #0063AD;
+    cursor: pointer;
+}
+
+.button{
+    background-color: #91C01B;
+    width: 100%;
+    height: 4.3rem;
+    border: 0;
+    border-radius: .5rem;
+    display: flex;
+    margin-inline: auto;
+    color: white;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: #B2D35F;
+}
+
+.button:active{
+    transform: scale(.95);
+}
+
+.button::after{
+    content: '';
+    background-image: url("./plus.svg");
+    height: 1.2rem;
+    width: 1.2rem;
+    display: block;
+    background-position: center;
+    margin-left: .7rem;
+}
+
+.addSign::before{
+  content: '$';
+}
+
+@media (prefers-color-scheme: dark){
+    .maincard{
+        background-color: #004579;
+    }
+    .titlearea{
+        background: #06375C;
+    }
+    .prices{
+        color: white;
+    }
+    .rules{
+        color: #B3D0E6;
+    }
+}

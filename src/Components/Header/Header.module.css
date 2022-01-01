@@ -1,0 +1,53 @@
+.mainheader{
+    background-color: #0063AD;
+    height: 57px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.maintitle{
+    text-transform: uppercase;
+    margin-block: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 20px;
+    color: white;
+}
+
+.maintitle span{
+    display: none;
+}
+
+.headercontainer{
+    max-width: 1366px;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.mainlogo{
+    width: 82px;
+    display: block;
+}
+
+@media (prefers-color-scheme: dark){
+    .mainheader{
+        background-color: #06375C;
+    }
+}
+
+@media (min-width: 600px){
+    .maintitle span{
+        display: inline;
+    }
+    .headercontainer{
+        justify-content: flex-start;
+    }
+}

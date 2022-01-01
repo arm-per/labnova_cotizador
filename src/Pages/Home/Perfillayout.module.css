@@ -1,0 +1,24 @@
+.mainlayout{
+    /*display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;*/
+    overflow: hidden;
+    max-width: 1040px;
+}
+
+.mainlayout div{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    flex: 1;
+}
+
+.carrusel{
+    display: grid;
+    grid-template-columns: min-content 8.5rem;
+    gap: 2rem;
+    max-width: 136.6rem;
+    margin: 2.7rem auto;
+    align-items: center;
+    justify-content: flex-start;
+}
