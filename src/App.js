@@ -17,18 +17,18 @@ function App() {
 
     useEffect(()=> {
         getLabs()
-            .then(res => setMainStudies(res))
+            .then(res => {
+                setMainStudies(res)
+                setFilter(res);
+            })
             .catch(err => console.error(err));
-    }, [setMainStudies])
-
-    useEffect(()=> {
         getPerfiles()
             .then(res => {
                 setPerfiles(res);
-                setFilter(res);
             })
             .catch(err => console.error(err))
-    }, [setPerfiles])
+    }, [setMainStudies, setPerfiles])
+
 
     const changeDataHandler = ({currentTarget}) => setData({...data, name: currentTarget.value});
 

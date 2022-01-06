@@ -2,8 +2,7 @@ import CheckupCard from "../../Components/CheckupCard/CheckupCard";
 import Styles from "./Perfillayout.module.css";
 import StyledButton from "./StyledButton";
 import forward from "./forwardbutton.svg";
-import {getPerfiles} from "../../DataProvider/Datasets";
-import {useEffect, useState} from "react";
+import { useState} from "react";
 
 
 

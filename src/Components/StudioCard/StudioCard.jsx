@@ -14,6 +14,8 @@ const StudioCard = (props) => {
     }
 
 
+
+
     return <>
         <article className={styles.maincard}>
             <div className={styles.titlearea}>

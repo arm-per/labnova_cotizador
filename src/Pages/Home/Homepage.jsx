@@ -5,6 +5,8 @@ import Styles from "./Homepage.module.css";
 
 const Homepage = (props) => {
 
+    console.log(props)
+
 
     return <>
         <div className={"container " + Styles.layouttop}>
