@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "http://localhost:3000/api/v1/"
+const url = "https://webapi.labnova.com.mx"
 
 const getLabs = () => {
     return new Promise((resolve, reject) => {
